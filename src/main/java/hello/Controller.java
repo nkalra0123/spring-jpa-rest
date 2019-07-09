@@ -27,7 +27,7 @@ public class Controller {
     }
 
     @GetMapping("/customers/email/{emailId}")
-    public List<Customer> getAllByEmailId(@PathVariable String emailId)
+    public Customer getAllByEmailId(@PathVariable String emailId)
     {
         return customerRepository.findByEmailId(emailId);
     }
